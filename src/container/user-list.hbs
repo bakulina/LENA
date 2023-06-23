@@ -1,0 +1,18 @@
+<div>
+   {{>space}}
+
+   {{>title text="user list"}}
+    {{>line}}
+
+<ul>
+    {{#each data.userlist}}
+<li> 
+<div>id:{{id}}</div> 
+<div>Name:{{name}}</div>
+{{#if isAdmin}}
+<button>send report</button>
+{{/if}}
+</li>
+    {{/each}}
+    </ul>
+</div>
